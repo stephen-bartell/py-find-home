@@ -18,7 +18,7 @@ class FindHomeTestCase(unittest.TestCase):
                 "latitude": 45.12345,
         "longitude": -118.12377,
         """
-        expected = {'latitude': 45.123, 'longitude': -118.123}
+        expected = {'latitude': 45.12345, 'longitude': -118.123}
         self.assertEqual(find_home(visits_has_home), expected)
 
     def test_home_not_found(self):
